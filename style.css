@@ -1,0 +1,437 @@
+
+/**********************************************************************************************************
+Recent_project
+**********************************************************************************************************/
+.recent_project
+{
+
+  width: 98%;
+  height: auto;
+  margin-top: 4%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  border: 1px solid gray;
+  box-shadow: 4px 4px 4px 4px gray;
+  box-sizing: border-box;
+  background-color: #ebecf0;
+  border-radius: 8px;
+}
+.recent_title_box
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.recent_title_box #recent_title
+{
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+  color: red;  
+}
+.recent_project #recent_title span
+{
+  border-bottom: 5px solid red ; 
+  border-radius: 5px;
+  padding-bottom: 3px;
+}
+
+.recent_project #recent_desc
+{
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+  color: black;
+}
+.recent_box
+{
+  margin-top: 30px;
+  width: 29%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 2%;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.8),
+  5px 5px 15px rgba(0, 0, 0, 0.155), 
+  inset -2px -2px 6px rgba(255,255,255,0.8), 
+  inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+  border-radius: 5%;
+  
+}
+
+.recent_box:hover{
+  box-shadow: inset -4px -4px 10px rgba(255,255,255,0.8), 
+	            inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+}
+.image-project
+{
+    
+	  width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 170px;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid gray;
+  	position: relative;
+	  overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
+}
+
+.image-project:before
+{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 180%;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(255,255,255,.3);
+	  z-index: 1;
+}
+
+.image-project:hover:before
+  {
+	  left: -180%;
+  }
+
+  .image-project #pro_img
+  {
+
+	 height: 170px;
+   width: 100%;
+	 filter: scale(100%);
+	 transition: 2s;
+  }
+.image-project:hover #pro_img
+  {
+	
+    filter: scale(5%);
+	  transform: scale(1.2);
+  }
+
+.recent_project_desc
+{
+  border-top-left-radius: 10%;
+}
+.recent_project_name
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#recent_pro_title
+{
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+.recent_project_name
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#proj_breif
+{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1rem;
+}
+.recent_button{
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.recent_button #r_btn
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: red;
+
+    font-weight: 700;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+#r_btn span{
+  position: relative;
+  z-index: 2;
+}
+
+#r_btn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:  red;  
+  border-radius: 10px;
+  transition: all .35s;
+}
+
+#r_btn:hover{
+  color: #fff;
+}
+
+#r_btn:hover:after{
+  width: 100%;
+}
+
+@media (min-width: 701px) and (max-width: 800px)
+{
+  .recent_project
+  {
+  
+    width: 98%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    border: 1px solid gray;
+    box-shadow: 4px 4px 4px 4px gray;
+    box-sizing: border-box;
+    background-color: #ebecf0;
+    border-radius: 8px;
+  }
+  .recent_box
+  {
+    margin-top: 30px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 2%;
+    box-shadow: 7px 7px 10px rgba(55,84,170,.15) ,
+               -7px -7px 20px  #fff ,
+                1px 1px 4px rgba(255,255,255, .2);
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+  
+  }
+  #recent_pro_title
+  {
+    font-size: 1.7rem;
+    
+  }
+}
+@media (min-width: 500px) and (max-width: 700px)
+{
+  .recent_project
+  {
+  
+    width: 90%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    border: 1px solid gray;
+    box-shadow: 4px 4px 4px 4px gray;
+    box-sizing: border-box;
+    background-color: #ebecf0;
+    border-radius: 8px;
+  }
+  .recent_title_box #recent_title
+  {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .recent_box
+  {
+    margin-top: 30px;
+    width: 76%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-bottom: 2%;
+    box-shadow: 7px 7px 10px rgba(55,84,170,.15) ,
+               -7px -7px 20px  #fff ,
+                1px 1px 4px rgba(255,255,255, .2);
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+  
+  }
+}
+@media (min-width: 300px) and (max-width: 499px)
+{
+  .recent_project
+  {
+  
+    width: 95%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    border: 1px solid gray;
+    box-shadow: 4px 4px 4px 4px gray;
+    box-sizing: border-box;
+    background-color: #ebecf0;
+    border-radius: 8px;
+  }
+  .recent_title_box #recent_title
+  {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .recent_box
+  {
+    margin-top: 30px;
+    width: 88%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    box-shadow: 7px 7px 10px rgba(55,84,170,.15) ,
+               -7px -7px 20px  #fff ,
+                1px 1px 4px rgba(255,255,255, .2);
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+  
+  }
+}
+@media screen and (max-width: 299px)
+{
+  .recent_project
+  {
+  
+    width: 96%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    border: 1px solid gray;
+    box-shadow: 4px 4px 4px 4px gray;
+    box-sizing: border-box;
+    background-color: #ebecf0;
+    border-radius: 8px;
+  }
+  .recent_title_box #recent_title
+  {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .recent_box
+  {
+    margin-top: 30px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    box-shadow: 7px 7px 10px rgba(55,84,170,.15) ,
+               -7px -7px 20px  #fff ,
+                1px 1px 4px rgba(255,255,255, .2);
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+  
+  }
+}
